@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <title>Preference Setting Description</title>
+    <style>
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 10px;
+          font-size:10pt;
+      }
+      td {
+          width: 250px;
+      }
+      tr:target {
+          background-color: lightgrey;
+      }
+    </style>
+  </head>
+  <body style="background-color:white; color:black; font-family:arial;">
+  
+    <table style="position:relative; margin:auto; border: 1px solid black;">
+    
+      <tr><td colspan="3" style="text-align:center; font-weight:bold; font-size:14pt;">Mouse Settings</td></tr>
+      <tr style="font-weight:bold;"><td>Setting Name</td><td>Setting Description</td><td>Setting Value</td></tr>
+      <tr id="mousePointerAcceleration"><td>Mouse Pointer Acceleration</td><td>initial value for the acceleration of a "mouse" cursor or relative pointing device from rest to its closing speed</td><td>Numeric 0.0 (slow) ... 0.5 (medium) ... 1.0 (fast)</td></tr>
+      <tr id="mousePointerSpeed"><td>Mouse Pointer Speed</td><td>speed at which a “mouse” cursor or relative pointing device moves across the screen</td><td>Numeric 0.0 (slow) ... 0.5 (medium) ... 1.0 (fast)</td></tr>
+      <tr id="switchMouseButtons"><td>Switch primary and secondary Buttons</td><td>make the button on the right the one for primary functions such as selecting and dragging</td><td>Boolean on/off</td></tr>
+      <tr id="doubleClickSpeed"><td>Double Click Speed</td><td>increase or decrease the double click speed</td><td>Numeric 0.0 (slow) ... 0.5 (medium) ... 1.0 (fast)</td></tr>
+      <tr id="hoverActivation"><td>Activate a window by hovering over it with the mouse</td><td>select and activate a window by pointing at it with the mouse rather than by clicking it</td><td>Boolean on/off</td></tr>
+      <tr id="clickLocking"><td>Click Locking</td><td>enable to highlight or drag without holding down the mouse button</td><td>Boolean on/off</td></tr>
+      <tr id="autoMoveButton"><td>Automatically move pointer to the default button in a dialog box</td><td>snaps to the default button in a dialog box</td><td>Boolean on/off</td></tr>
+      <tr id="vertScrolling"><td>Vertical Scrolling</td><td>mouse wheel usage to scroll the page vertically</td><td>(Numeric) Enumeration Quantity of Lines (1 ... 100)/One Screen Site</td></tr>
+      <tr id="horScrolling"><td>Horizontal Scrolling</td><td>mouse wheel usage to scroll the page horizontal</td><td>Numeric Quantity of Letters (1 ... 100)</td></tr>
+
+      <tr><td colspan="3" style="text-align:center; font-weight:bold; font-size:18px;">Keyboard Settings</td></tr>
+      <tr style="font-weight:bold;"><td>Setting Name</td><td>Setting Description</td><td>Setting Value</td></tr>
+      <tr id="filterKeys"><td>Filter Keys</td><td>ignore keystrokes that occur in rapid succession, or keystrokes that are held down for several seconds unintentionally</td><td>Boolean on/off</td></tr>
+      <tr id="filterKeysBounceKeys"><td>Filter Keys: Turn on Bounce Keys</td><td>unintentionally bounce of fingers on a key, Bounce Keys will ignore repeated keystrokes for a specific amount of time</td><td>Boolean on/off</td></tr>
+      <tr id="filterKeysBounceKeysWaitTime"><td>Filter Keys: Bounce Keys Wait Time</td><td>how long the computer should wait before accepting keystrokes</td><td>Numeric Enumeration 0.5 (fast), 0.7, 1.0, 1.5, 2.0 (slow) seconds</td></tr>
+      <tr id="filterKeysRepeatSlowKeys"><td>Filter Keys: Turn on Repeat Keys and Slow Keys</td><td>ignore a keystroke that is pressed too briefly</td><td>Boolean on/off</td></tr>
+      <tr id="filterKeysAvoidKeys"><td>Filter Keys: Repeat Keys and Slow Keys - Avoid accidental keystrokes Wait Time</td><td>hold down time before the computer accepts the keystroke</td><td>Numeric Enumeration 0.0 (fast), 0.3, 0.5, 0.7, 1.0, 1.4, 2.0, 5.0, 10.0, 20.0 (slow)</td></tr>
+      <tr id="filterKeysAvoidKeysFirstRepeatedKey"><td>Filter Keys: Repeat Keys and Slow Keys - Avoid repeated keystrokes when holding down a key wait time before accepting the first repeated keystrokes</td><td>wait time before the computer accepts the first repeated keystroke</td><td>Numeric Enumeration 0.3 (fast), 0.5, 0.7, 1.0, 1.5, 2.0 (slow) seconds</td></tr>
+      <tr id="filterKeysAvoidKeysFirstSubsequentKey"><td>Filter Keys: Repeat Keys and Slow Keys - Avoid repeated keystrokes when holding down a key wait time before accepting the subsequent repeated keystroke</td><td>wait time before the computer accepts the subsequent repeated keystrokes</td><td>Numeric Enumeration 0.3 (fast), 0.5, 0.7, 1.0, 1.5, 2.0 (slow) seconds</td></tr>
+      <tr id="toggleKeys"><td>Toggle Keys</td><td>play an alert each time the Caps Lock, Num Lock, or Scroll Lock keys are pressed</td><td>Boolean on/off</td></tr>
+      <tr id="stickyKeys"><td>Sticky Keys</td><td>instead of having to press three keys at once, use one key by turning on Sticky Keys and adjust the settings</td><td>Boolean on/off</td></tr>
+      <tr id="stickyKeysLockModifier"><td>Sticky Keys: Modifier Keys</td><td>lock modifier keys when pressed twice in a row</td><td>Boolean on/off</td></tr>
+      <tr id="stickyKeysTurnOff"><td>Sticky Keys: Turn off Sticky Keys</td><td>turn off Sticky Keys when two keys are pressed at once</td><td>Boolean on/off</td></tr>
+      <tr id="mouseKeys"><td>Mouse Keys</td><td>instead of using the mouse, use the arrow keys on the keyboard or the numeric keypad to move the mouse pointer</td><td>Boolean on/off</td></tr>
+      <tr id="mouseKeysTopSpeed"><td>Mouse Keys: Top Speed</td><td>increase or decrease the speed limit of the mouse pointer</td><td>Numeric 0 (low) ... 12 (high)</td></tr>
+      <tr id="mouseKeysAcceleration"><td>Mouse Keys: Acceleration</td><td>increase or decrease the acceleration of the mouse pointer</td><td>Numeric 0 (slow) ... 12 (fast)</td></tr>
+      <tr id="mouseKeysHoldKeys"><td>Mouse Keys: Hold Keys for Acceleration and Slow Down</td><td>hold down CTRL to speed up and SHIFT to slow down</td><td>Boolean on/off</td></tr>
+      <tr id="mouseKeysNum"><td>Mouse Keys: Use Mouse Keys when Num Lock is on/off</td><td>allows to use the mouse keys with or without the Num Pad</td><td>Boolean on/off</td></tr>
+      <tr id="keyCombination"><td>Keyboard Shortcuts</td><td>press down keyboard shortcuts for activating a keyboard functionality</td><td>Boolean on/off</td></tr>
+    
+    
+      <tr><td colspan="3" style="text-align:center; font-weight:bold; font-size:18px;">On-Screen-Keyboard Settings</td></tr>
+      <tr style="font-weight:bold;"><td>Setting Name</td><td>Setting Description</td><td>Setting Value</td></tr>
+      <tr id="onScreenKeyboard"><td>Turn on On-Screen-Keyboard</td><td>starts the On-Screen-Keyboard application</td><td>Boolean on/off</td></tr>
+      <tr id="onScreenKeyboardNumPad"><td>On-Screen-Keyboard: Turn on numeric key pad</td><td>activates the num key pad on the keyboard</td><td>Boolean on/off</td></tr>
+      <tr id="onScreenKeyboardUsage"><td>On-Screen-Keyboard: Usage</td><td>defines how the on-screen-keyboard will be used</td><td>Enumeration Click on Keys/Hover over Keys/Scan through Keys</td></tr>
+      <tr id="onScreenKeyboardHoverDuration"><td>On-Screen-Keyboard: Usage - Hover on Keys Duration</td><td>defines the hover duration, before the key is activated</td><td>Numeric Enumeration 0.5 (fast), 0.75, 1.0, 1.5, 2.0, 2.5, 3.0 (slow) seconds</td></tr>
+      <tr id="onScreenKeyboardScanSelectionJoystick"><td>On-Screen-Keyboard: Usage - Scan through Keys Key Selection - Use joystick, game pad or other gaming device</td><td>defines how a scanned key is selected</td><td>Boolean on/off</td></tr>
+      <tr id="onScreenKeyboardScanSelectionKeyboardKey"><td>On-Screen-Keyboard: Usage - Scan through Keys Key Selection - Use Keyboard Key</td><td>defines how a scanned key is selected</td><td>Boolean on/off</td></tr>
+      <tr id="onScreenKeyboardScanSelectionKeyboardKeyChoice"><td>On-Screen-Keyboard: Usage - Scan through Keys Key Selection Use Keyboard Key - Key Choice</td><td>defines which keyboard key is used for selection</td><td>Enumeration Space, Enter, F2, F3, F4, F5, F6, F7, F8, F9, F12</td></tr>
+      <tr id="onScreenKeyboardScanSelectionMouseClick"><td>On-Screen-Keyboard: Usage - Scan through Keys Key Selection - Use mouse Click</td><td>defines how a scanned key is selected</td><td>Boolean on/off</td></tr>
+      <tr id="onScreenKeyboardTextPrediction"><td>On-Screen-Keyboard: Turn on Text Prediction</td><td>predicts word during the text input</td><td>Boolean on/off</td></tr>
+      <tr id="onScreenKeyboardTextPredictionSpace"><td>On-Screen-Keyboard: Text Prediction - Insert space after predicted words</td><td>inserts a space after a predicted word</td><td>Boolean on/off</td></tr>
+
+
+      <tr><td colspan="3" style="text-align:center; font-weight:bold; font-size:18px;">Voice Recognition Settings</td></tr>
+      <tr style="font-weight:bold;"><td>Setting Name</td><td>Setting Description</td><td>Setting Value</td></tr>
+      <tr id="voiceRecogniton"><td>Turn on Voice Recognition</td><td>starts the voice recognition application and allows spoken commands</td><td>Boolean on/off</td></tr>
+
+
+      <tr><td colspan="3" style="text-align:center; font-weight:bold; font-size:18px;">Screen Enhancement Settings</td></tr>
+      <tr style="font-weight:bold;"><td>Setting Name</td><td>Setting Description</td><td>Setting Value</td></tr>
+      <tr id="displayWarning"><td>Display a warning message when turning a setting (keyboard functionality) on</td><td>displays a warning whenever a keyboard shortcut was used</td><td>Boolean on/off</td></tr>
+      <tr id="displayIcon"><td>Display an icon on the task bar, when turning on a setting (keyboard functionality)</td><td>displays an icon on the task bar whenever a keyboard shortcut was used</td><td>Boolean on/off</td></tr>
+      <tr id="screenResolution"><td>Screen Resolution</td><td>switches the the resolution of a used screen</td><td>Numeric Enumeration 800x600 ... 1920x1080</td></tr>
+      <tr id="removeBackgroundImages"><td>Remove Background Images</td><td>turns off all unimportant, overlapped content and background images</td><td>Boolean on/off</td></tr>
+      <tr id="preventArrangement"><td>Prevent windows from being automatically arranged when moved to the edge of the screen</td><td>prevents windows from automatically resizing and docking along the sides of your screen when moved there</td><td>Boolean on/off</td></tr>
+      <tr id="underlineKeyboardShortcuts"><td>Underline keyboard shortcuts and access keys</td><td>makes keyboard access in dialog boxes easier by highlighting access keys for the controls in them</td><td>Boolean on/off</td></tr>
+      <tr id="turnOffAnimations"><td>Turn off all unnecessary animations</td><td>turns off animation effects, such as fading effects</td><td>Boolean on/off</td></tr>
+      <tr id="windowsNotifications"><td>Choose how long Windows notification dialog boxes stay open</td><td>choose how long notifications are displayed on the screen before they close</td><td>Numeric Enumeration 5.0 (fast), 7.0, 15.0, 30.0, 60.0, 300.0 (slow) seconds</td></tr>
+      <tr id="changeSizeTextIcons"><td>Change the size of text and icons</td><td>makes text and other items on the screen appear larger</td><td>Numeric Enumeration 100 (small), 125, 150 (big) percent</td></tr>
+      <tr id="fontFamily"><td>Font Family</td><td>font by name</td><td>Enumeration all on the device available font families</td></tr>
+      <tr id="fontWeight"><td>Font Weight</td><td>font-weight property sets how thick or thin characters in text should be displayed</td><td>Enumeration normal, bold, bolder, lighter, 100-900, initial</td></tr>
+      <tr id="lineHeight"><td>Line Height</td><td>line-height property specifies the line height</td><td>Numeric ... 1.0 ...</td></tr>
+      <tr id="textAlign"><td>Text Align</td><td>text-align property specifies the horizontal alignment of text in an element</td><td>Enumeration Left, Center, Right</td></tr>
+      <tr id="letterSpacing"><td>Letter Spacing</td><td>letter-spacing property increases or decreases the space between characters in a text</td><td>Numeric ... 0.0 ...</td></tr>
+      <tr id="fontSize"><td>Font Size</td><td>size of a font</td><td>Numeric 0 ...</td></tr>
+      <tr id="foregroundColour"><td>Foreground Colour</td><td>foreground colour in an interface that is displaying text</td><td>Enumeration 000000 ... FFFFFF</td></tr>
+      <tr id="backgroundColour"><td>Background Colour</td><td>background colour in an interface that is displaying text</td><td>Enumeration 000000 ... FFFFFF</td></tr>
+      <tr id="highlightColour"><td>Highlight Colour</td><td>the highlight colour in an interface that is displaying text</td><td>Enumeration 000000 ... FFFFFF</td></tr>
+      <tr id="linkColour"><td>Link Colour</td><td>link colour in an interface that is displaying text with hyperlinks</td><td>Enumeration 000000 ... FFFFFF</td></tr>
+      <tr id="cursorColour"><td>Cursor Colour</td><td>colour of the cursor</td><td>Enumeration White, Black, Inverted</td></tr>
+      <tr id="borderColour"><td>Border Colour</td><td>colour of a window border</td><td>Enumeration 000000 ... FFFFFF</td></tr>
+      <tr id="borderTransparency"><td>Border Transparency</td><td>transparency setting of a window border</td><td>Numeric 0 ... 100 percent</td></tr>
+      <tr id="contrastTheme"><td>Choose a High Contrast theme</td><td>sets a high-contrast color scheme that heightens the color contrast of some text and images</td><td>Enumeration Contrast Black, Contrast White, ...</td></tr>
+      <tr id="cursorSize"><td>Cursor Size</td><td>size of a cursor</td><td>Enumeration normal, big, very big</td></tr>
+      <tr id="cursorTrail"><td>Cursor Trail</td><td>the cursor is followed by duplicated cursors like trail</td><td>Boolean on/off</td></tr>
+      <tr id="cursorTrailLength"><td>Cursor Trail Length</td><td>length of cursor trail</td><td>Numeric 0 ... 5</td></tr>
+      <tr id="cursorChangeApplication"><td>Allowing that the cursor is changed by applications/designs</td><td>allows the cursor to be changed by application or designs</td><td>Boolean on/off</td></tr>
+      <tr id="cursorShadow"><td>Cursor Shadow</td><td>enables a cursor shadow</td><td>Boolean on/off</td></tr>
+      <tr id="cursorPosition"><td>Present cursor position by pressing the Control-key</td><td>gives a visible hint where the cursor is on the screen after pressing the Ctrl-Key</td><td>Boolean on/off</td></tr>
+      <tr id="blinkingCursor"><td>Set the thickness of the blinking cursor</td><td>makes the blinking cursor in dialogue boxes and programs thicker</td><td>Numeric 1 ... 20</td></tr>
+      <tr id="magnification"><td>Turn on the magnifier</td><td>turns on the magnification application</td><td>Boolean on/off</td></tr>
+      <tr id="magnificationViews"><td>Magnification Views</td><td>display options for the magnificaiton application (how the application is presented on the screen)</td><td>Enumeration Fullscreen, Magnifier, Fixed</td></tr>
+      <tr id="magnificationMagnification"><td>Magnification: Set how much the view changes when zooming in</td><td>defines the magnification percentage</td><td>Numeric 100 ... 1600 percent</td></tr>
+      <tr id="magnificationInversion"><td>Magnification: Turn on colour inversion</td><td>changes the color theme of the magnified area</td><td>Boolean on/off</td></tr>
+      <tr id="magnificationCursorPursuit"><td>Magnification: Follow the mouse pointer</td><td>the magnified area of the screen changes with the motion of the mouse pointer</td><td>Boolean on/off</td></tr>
+      <tr id="magnificationKeyboardPursuit"><td>Magnification: Follow the keyboard focus</td><td>the magnified area of the screen changes with the focus of the keyboard</td><td>Boolean on/off</td></tr>
+      <tr id="magnificationTextPursuit"><td>Magnification: Have Magnifier follow the text insertion point</td><td>the magnified area of the screen changes with the text insertion point</td><td>Boolean on/off</td></tr>
+
+      <tr><td colspan="3" style="text-align:center; font-weight:bold; font-size:18px;">Audio Output Settings</td></tr>
+      <tr style="font-weight:bold;"><td>Setting Name</td><td>Setting Description</td><td>Setting Value</td></tr>
+      <tr id="SoundKeyStrokes"><td>On-Screen-Keyboard: Sound of Keystrokes</td><td>provides an acoustic sound if an On-Screen-Keyboard key was pressed</td><td>Boolean on/off</td></tr>
+      <tr id="AcousticWarning"><td>Make a sound when turning a keyboard functionality setting on or off</td><td>provides an acoustic warning if a keyboard shortcut functionality is turned on or off</td><td>Boolean on/off</td></tr>
+      <tr id="screenReader"><td>Turn on Screen Reader</td><td>an assistive technology type in which text that otherwise appears on a screen is rendered as speech</td><td>Boolean on/off</td></tr>
+      <tr id="screenReaderRate"><td>Screen Reader: Speech Rate</td><td>rate of speech of a speech synthesizer</td><td>Numeric 1 ...</td></tr>
+      <tr id="screenReaderVolume"><td>Screen Reader: Volume</td><td>volume of a speech synthesizer</td><td>Numeric 0.0 (low) ... 0.5 ... 1.0 (high)</td></tr>
+      <tr id="screenReaderPitch"><td>Screen Reader: Pitch</td><td>pitch of a speech synthesizer</td><td>Numeric 0.0 (low) ... 0.5 ... 1.0 (high)</td></tr>
+      <tr id="screenReaderVoice"><td>Screen Reader: Voice</td><td>voice of a speech synthesizer</td><td>Enumeration male, female, different speaker</td></tr>
+      <tr id="screenReaderLink"><td>Screen Reader: Link Indications</td><td>the characteristics of presentation for a hyperlink when using a screen reader</td><td>Enumeration Speak Link, Different Voice, Sound Effect, None</td></tr>
+      <tr id="screenReaderEcho"><td>Screen Reader: Echo User's Keystrokes</td><td>to hear what one types</td><td>Boolean on/off</td></tr>
+      <tr id="screenReaderMessages"><td>Screen Reader: Announce System Messages</td><td>to hear background events, such as notifications</td><td>Boolean on/off</td></tr>
+      <tr id="screenReaderScroll"><td>Screen Reader: Announce Scroll Notifications </td><td>to hear an announcement when the screen scrolls</td><td>Boolean on/off</td></tr>
+      <tr id="audioDesc"><td>Turn on Audio Description</td><td>Audio descriptions describe what's happening in videos</td><td>Boolean on/off</td></tr>
+
+      <tr><td colspan="3" style="text-align:center; font-weight:bold; font-size:18px;">Visual Alerts Settings</td></tr>
+      <tr style="font-weight:bold;"><td>Setting Name</td><td>Setting Description</td><td>Setting Value</td></tr>
+      <tr id="visualNotification"><td>Turn on visual notifications for sounds</td><td>Sound notifications replace system sounds with visual cues, such as a flash on the screen</td><td>Boolean on/off</td></tr>
+      <tr id="captions"><td>Turn on text captions for spoken dialog</td><td>displays text captions in place of sounds to indicate that activity is happening on your computer</td><td>Boolean on/off</td></tr>
+
+    </table>
+  </body>
+</html>
